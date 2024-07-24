@@ -1,0 +1,257 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+header {
+    a {
+        color: white;
+        text-decoration: none;
+    }
+
+    h2 {
+        color: white;
+
+    }
+
+
+    padding: 15px;
+    background-color:blueviolet;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius:0px 0px 160px 160px;
+    /* border: 2px solid black; */
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+
+}
+
+nav {
+    display: flex;
+    padding: 12px;
+    gap: 2px;
+    color: white;
+
+}
+
+.icono img {
+    width: 75px;
+}
+
+
+.cuerpo {
+    /* display: flex;
+
+    justify-content: center;
+    padding: 20px; */
+    position: relative;
+    /* Necesario para los pseudo-elementos */
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    overflow: hidden;
+    /* Asegura que las olas no salgan del contenedor */
+
+
+}
+
+#flex {
+    display: flex;
+    flex-direction: column;
+
+}
+
+#descripcion {
+    width: 300px;
+
+}
+
+#cuerpoListado {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    align-items: center;
+    gap: 9px;
+
+}
+
+input {
+    border-radius: 5px;
+    border: 1px solid gray;
+    width: 100%;
+}
+
+textarea {
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+.boton {
+    padding: 8px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    background-color: blueviolet;
+    /* border: 2px solid; */
+    box-shadow: none;
+    justify-content: center;
+}
+
+.formulario {
+    display: flex;
+    border: 2px solid darkblue;
+    justify-content: space-evenly;
+    gap: 20px;
+    width: auto;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: aliceblue;
+}
+
+.listado {
+    color: white;
+    border: 2px solid black;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80%;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    background-color: blueviolet;
+
+    h2 {
+        margin: 0%;
+    }
+
+    .imag {
+        display: flex;
+        border-radius: 10%;
+        width: 150px;
+        align-items: center;
+
+        img {
+            width: 100%;
+            border-radius: 10%;
+            overflow: hidden;
+
+        }
+    }
+}
+
+.info {
+    width: 100%px;
+    padding: 2px;
+}
+
+
+
+.precio {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    button {
+        color: black;
+        background-color: white;
+    }
+}
+
+@media screen and (max-width:650px) {
+    .cuerpo form {
+        flex-direction: column;
+    }
+
+    header {
+        flex-direction: column;
+    }
+
+    header h2 {
+        font-size: 1.3rem;
+    }
+
+    .listado {
+        flex-direction: column;
+    }
+
+
+}
+
+
+.container {
+    height: 500px;
+    background: #0f9bf6;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    font-family: Arial;
+    text-align: center;
+    font-size: 2em;
+    color: rgba(255, 255, 255, .8);
+}
+
+.waves {
+    position: absolute;
+    /*      left: 0;
+    right: 0;
+    height: 200px;
+    bottom: 0;*/
+    bottom: -135px;
+    height: 527px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.wave {
+    position: absolute;
+    left: -180px;
+    bottom: 0;
+    /*width: 200px;*/
+    /*height: 200px;*/
+    /*width: 100%;*/
+    /*border-radius: 50%;*/
+    /*background:rgba(0,0,0, .3);*/
+    width: 2402px;
+    height: 427px;
+    background: url(https://static.platzi.com/media/files/waves_c8551f5d-ecf6-4a81-ae1d-f3a0ad55ba10.png) center bottom no-repeat;
+    animation: 5s wave ease-in-out infinite alternate;
+}
+
+.wave.a {
+    background-position: 0 -854px;
+}
+
+.wave.b {
+    background-position: 0 -427px;
+    animation-delay: .6s;
+}
+
+.wave.c {
+    background-position: 0 0;
+    animation-delay: 1.2s;
+}
+
+/*.container {
+    position: absolute;
+  }*/
+@keyframes wave {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(-80px, 30px);
+    }
+
+    100% {
+        transform: translate(160px, -60px);
+    }
+}
