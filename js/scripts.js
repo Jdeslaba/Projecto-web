@@ -29,11 +29,11 @@ function añadirProducto(ev) {
 
 function mostrarProducto(carrito) {
     if (carrito != null && carrito.length > 0) {
-        let generado = ""
+        let generado = "<div><h2>Listado de Prodcutos</h2></div>"
         let listado = document.getElementById('cuerpoListado');
         for (let index = 0; index < carrito.length; index++) {
             let imagen = `<div class="listado"><div class="imag"><img src="${carrito[index].imagen}"
-            alt="Foto" onerror="reemplaza_imagen(this);">
+            alt="Foto de ${carrito[index].nombre}" onerror="reemplaza_imagen(this);">
             </div>`
 
             let info = `<div class="info">
