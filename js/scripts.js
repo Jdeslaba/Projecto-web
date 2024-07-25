@@ -104,7 +104,7 @@ function eliminarProducto(ev, numero) {
 
 function reemplaza_imagen(imagen) {
     imagen.onerror = "";
-    imagen.src = "../img/no-fotos.png";
+    imagen.src = "./img/no-fotos.png";
     return true;
 }
 // eliminarProducto()
